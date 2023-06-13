@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheet.css">
+</head>
+
+<body>
+    <div id="initial_container">
+        <button id="sell_button" onclick="hideElse()">Vender</button>
+        <p>Al darle click a seleccionar se simula la venta de productos por juana y pedro</p>
+    </div>
+
+    <div id="main_container">
+        <div id="buttons">
+            <button class="menu_buttons" onclick="showProductosVendidos()">Productos vendidos</button>
+            <button class="menu_buttons" onclick="showVentasPorVendedor()">Ventas por vendedor</button>
+            <button class="menu_buttons" onclick="showRanking()">Ranking</button>
+        </div>
+    </div>
+    <div id="selled_products">
+        <div id="drop_down_menu">
+            <button id="seleccionador"> Seleccionar</button>
+            <div id="drop_down_elements">
+                <button class="drop_elements" onclick="showJuanaSales()">Juana</button>
+                <button class="drop_elements" onclick="showPedroSales()">Pedro</button>
+            </div>
+        </div>
+
+        <table id="items_table">
+            <caption>Amount of items</caption>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Aqua</td>
+                <td class="number_of_items"></td>
+            </tr>
+            <tr>
+                <td>Emocion</td>
+                <td class="number_of_items"></td>
+            </tr>
+            <tr>
+                <td>Alegria</td>
+                <td class="number_of_items"></td>
+            </tr>
+            <tr>
+                <td>Frescura</td>
+                <td class="number_of_items"></td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td class="number_of_items"></td>
+            </tr>
+
+        </table>
+    </div>
+    <div id="amount_of_money">
+        <div class="ranking_container">
+            <p class="ranking_name">Juana</p>
+            <p class="ranking_value">#</p>
+        </div>
+        <div class="ranking_container">
+            <p class="ranking_name">Pedro</p>
+            <p class="ranking_value">#</p>
+        </div>
+
+        <table id="items_table_selled">
+            <caption>Items selled</caption>
+            <thead>
+                <tr>
+                    <th>Productos</th>
+                    <th>Juana</th>
+                    <th>pedro</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Aqua</td>
+                <td class="number_of_items_juana"></td>
+                <td class="number_of_items_pedro"></td>
+            </tr>
+            <tr>
+                <td>Emocion</td>
+                <td class="number_of_items_juana"></td>
+                <td class="number_of_items_pedro"></td>
+            </tr>
+            <tr>
+                <td>Alegria</td>
+                <td class="number_of_items_juana"></td>
+                <td class="number_of_items_pedro"></td>
+            </tr>
+            <tr>
+                <td>Frescura</td>
+                <td class="number_of_items_juana"></td>
+                <td class="number_of_items_pedro"></td>
+            </tr>
+            <tr>
+                <td id="br">Total</td>
+                <td class="number_of_items_juana"></td>
+                <td class="number_of_items_pedro"></td>
+            </tr>
+
+        </table>
+    </div>
+    <div id="rankings">
+        <h2 id="winner">#1 Name</h2>
+        <img src="/img/trophy.png" id="trophy"></img>
+    </div>
+    <script src="/code.js"></script>
+</body>
+
+</html>

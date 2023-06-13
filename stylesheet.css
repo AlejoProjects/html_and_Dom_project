@@ -1,0 +1,160 @@
+body{
+    background-color: rgb(19, 19, 105);
+}
+p{color:white;}
+button {
+    background-color: rgb(14, 14, 75);
+    color:white;
+    border-style: none;
+    border-radius: 5px;
+    height:60px;
+    width: 50%;
+    font-size: larger;
+    font-family:Arial, Helvetica, sans-serif
+
+}
+button:hover {
+    background-color: antiquewhite;
+    color:black;
+}
+/*Main section**/
+#initial_container {
+    display:block; 
+    margin-left: 40%;
+    margin-top:20%;
+}
+#main_container {
+    display: none;
+}
+#buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+/*Items selled Section**/
+#selled_products {
+    display:none;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+#sell_button:active {
+    background-color:rgb(2, 2, 24);
+    color:white;
+}
+/*Dropdown menu to select which items are showed*/
+#drop_down_menu{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+
+}
+#drop_down_elements{
+    display: none;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 5%;
+    width:100%;
+    height:50%;
+    justify-items: center;
+
+}
+
+
+#drop_down_menu:hover #drop_down_elements {
+    display: grid;
+}
+
+.drop_elements {
+    width:100%;
+    height:100%;
+    border-radius: 0;
+
+}
+.drop_elements:hover {
+    background-color: rgb(54, 54, 54);
+    color:white;
+}
+#seleccionador {
+    background-color: rgb(35, 35, 185);
+    width:100%;
+    height:50px;
+
+}
+
+/*Table wich contains the info of the*/
+
+table,td,tr,th{
+    border-collapse: collapse;
+    border:1px solid white;
+    color:white;
+  }
+  
+table {
+    width:50%;
+    display: none;
+    margin: 100px auto;
+  	border-spacing: 0px;
+	width: 680px;
+	box-shadow: 5px 4px 30px rgba(0,0,0,.10);
+	border-radius: 20px;
+	transition: all .5s;
+}
+td {
+    padding: 20px 15px;
+}
+thead {
+    background: linear-gradient(45deg, #614ad3, #e42c64);
+    border-radius: 10px 10px 0 0;
+}
+
+/*Amount of sales per seller SECTION*/
+#amount_of_money {
+    display:none;
+    grid-template-rows: 1fr 1fr;
+    color:white;
+    margin-left:  30%;
+    margin-right: 40%;
+    margin-top:10%;
+
+}
+/*Progress bars */
+.ranking_container{
+    display: grid;
+    grid-template-columns: 2fr 7fr;
+}
+
+.ranking_value {
+    width:100%;
+    background-color: white;
+    color:black;
+    border-radius: 10px;
+    margin-left: 20%;
+    padding-left: 60%;
+}
+/*Sales table*/
+#items_table_selled {
+    margin-top: 5%;
+    width:100%;
+}
+/*Ranking SECTION*/
+#rankings {
+    display:none;
+    grid-template-rows: 1fr 4fr;
+    justify-items: center;
+    align-items: center;
+    color:gold;
+}
+#winner {
+    margin-top: 5%;
+    height: 20%;
+}
+#trophy {
+    background: radial-gradient(circle, rgba(242,179,36,1) 50%, rgba(157,115,20,1) 70%, rgba(247,230,0,1) 100%);
+    border-radius: 30%;
+    width:10%;
+    height:30%;
+    padding:10%;
+    
+}
